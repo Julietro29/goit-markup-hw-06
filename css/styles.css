@@ -190,7 +190,7 @@ a.adress-link {
     margin: 0 auto;
     max-width: 320px;
     /* max-width: 1440px; */
-    padding: 72px 16px;
+    padding: 72px 0;
     /* padding: 188px 0; */
     background-color: var(--c-background);
     background-image: linear-gradient(
@@ -200,6 +200,13 @@ a.adress-link {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), 
+                url(../images/hero/bg_mob@2x.jpg);
+    }
 }
 
 .hero-title {
@@ -292,7 +299,7 @@ button {
 }
 .goals-text {
     color: var(--c-adress-link);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -785,7 +792,6 @@ input:checked .modal-checkbox-span {
     text-decoration-line: underline;
     cursor: pointer;
 }
-
 .menu-container {
     position: fixed;
     display: flex;
@@ -853,14 +859,12 @@ input:checked .modal-checkbox-span {
     display: flex;
     gap: 40px;
     align-items: center;
-    justify-content: center;
 }
 
 .mobile-socials-item {
     width: 40px;
     height: 40px;
 }
-
 .mobile-socials-link {
     width: 100%;
     height: 100%;
@@ -877,21 +881,17 @@ input:checked .modal-checkbox-span {
 /* MEDIA */
 @media screen and (min-width: 320px) {
     .container {
-        max-width: 320px;
+        width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
-        .our-portfolio-image {
-            width: 288px;
-            height: 280px;
-        }
+    .our-portfolio-image {
+        width: 288px;
+        height: 280px;
+    }
 }
-@media screen and (min-resolution: 192dpi) {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero/bg_mob@2x.jpg);
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 1157.98px) {
     .goals-list-item-icon {
         display: none;
     }
@@ -918,14 +918,14 @@ input:checked .modal-checkbox-span {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;  
+        width: 768px;  
     }
     .list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: flex-end;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-end;
+    }
     .adress-link {
         font-size: 12px;
         line-height: 1.17;
@@ -936,10 +936,17 @@ input:checked .modal-checkbox-span {
     }
     .hero-section {
         max-width: 768px;
-        padding: 112px 136px;
+        padding: 112px 0px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/hero/Dark-bg_tab.jpg);
+    }
+    @media screen and (min-resolution: 192dpi) {
+            .hero-section {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero/Dark-bg_tab@2x.jpg);
+            }
     }
     .hero-title {
         max-width: 496px;
@@ -950,7 +957,7 @@ input:checked .modal-checkbox-span {
     .our-portfolio-image {
         width: 356px;
         height: 300px;
-        }
+    }
     .footer-input {
         width: 264px;
     }
@@ -975,6 +982,9 @@ input:checked .modal-checkbox-span {
     .goals-inner .goals-inner-item {
         width: calc((100% - 24px) / 2);
     }
+    .goals-text {
+        font-weight: 400;
+    }
     .our-team-list {
         gap: 64px;
         column-gap: 24px;
@@ -987,33 +997,36 @@ input:checked .modal-checkbox-span {
         width: calc((100% - 24px) / 2);
     }
 }
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-    url(../images/hero/Dark-bg_tab@2x.jpg);
-}
+
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        width: 1158px;
         padding: 0 15px;
     }
-        .logo {
-            margin-right: 76px;
-        }
+    .logo {
+        margin-right: 76px;
+    }
     .list {
-            gap: 40px;
-        }
+        gap: 40px;
+    }
     .adress-link {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-        }
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
     .hero-section {
         max-width: 1440px;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/hero/people_desk.jpg);
+    }
+    @media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people_desk@2x.jpg);
+    }
     }
     .hero-title {
         margin-bottom: 48px;
@@ -1025,9 +1038,15 @@ input:checked .modal-checkbox-span {
         display: flex;
         gap: 0;
     }
+    .footer-text {  
+        margin-bottom: 0px;
+    }
+    .footer-socials {
+        margin-bottom: 0px;
+    }
     .footer-social-contacts {
-            margin-bottom: 0;
-            margin-right: 80px; 
+        margin-bottom: 0;
+        margin-right: 80px; 
     }
     .footer-input {
         opacity: 1;
@@ -1047,26 +1066,23 @@ input:checked .modal-checkbox-span {
         line-height: 1.2;
         text-align: left;
     }
+    .goals-text {
+        font-weight: 400;
+    }
     .our-team-list {
         gap: 24px;
     }
-    
     .our-team-item {
         width: calc((100% - 72px) / 4);
     }
     .our-portfolio-list {
         gap: 24px;
     }
-         .our-portfolio-image {
-             width: 360px;
-             height: 300px;
-         }
+    .our-portfolio-image {
+        width: 360px;
+        height: 300px;
+    }
     .our-portfolio-list .our-portfolio-item {
         width: calc((100% - 48px) / 3);
     }
-}
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-    url(../images/hero/people_desk@2x.jpg);
 }
