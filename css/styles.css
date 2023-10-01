@@ -403,7 +403,6 @@ button {
     align-content: center;
     text-align: start;
 }
-
 .our-portfolio-image {
     width: 100%;
 }
@@ -500,7 +499,6 @@ button {
     margin-bottom: 72px;
     text-align: start;
 }
-
 .footer-socials-text {
     color: var(--c-white);
     font-weight: 500;
@@ -538,7 +536,6 @@ button {
 .footer-socials-icon:focus {
     background-color: var(--c-green);
 }
-
 .subscribe-section {
     display: flex;
     flex-wrap: wrap;
@@ -546,7 +543,6 @@ button {
     justify-content: center;
     align-items: center;
 }
-
 .footer-input {
     width: 288px;
     opacity: 0.3;
@@ -567,12 +563,6 @@ button {
 .footer-input::placeholder {
     color: var(--c-white);
 }
-
-/* .subscribe-section {
-    display: flex;
-    gap: 24px;
-} */
-
 .subscribe-button {
     min-width: 165px;
     height: 40px;
@@ -591,7 +581,6 @@ button {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
 .subscribe-button:hover,
 .subscribe-button:focus {
     background-color: var(--c-ocean);
@@ -600,6 +589,7 @@ button {
     fill: var(--c-white);
     margin-left: 16px;
 }
+
 /* MODAL */
 .backdrop {
     background-color: var(--c-navy-blue-modal);
@@ -646,7 +636,6 @@ button {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close:active,
 .modal-close:hover,
 .modal-close:focus {
@@ -654,11 +643,9 @@ button {
     border: none;
     fill: #ffffff;
 }
-
 .icon-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .is-open {
     opacity: 1;
     visibility: visible;
@@ -702,7 +689,6 @@ button {
     outline: none;
     border: 1px solid var(--c-brand);
 }
-
 .modal-input:active + .modal-input-icon,
 .modal-input:focus + .modal-input-icon {
     fill: var(--c-brand);
@@ -769,7 +755,6 @@ input.modal-checkbox:checked+.modal-checkbox-label>.modal-checkbox-span {
     background-color: var(--c-ocean);
     fill: var(--c-team-background);
 }
-
 input:checked .modal-checkbox-span {
     border: none;
     background-color: var(--c-ocean);
